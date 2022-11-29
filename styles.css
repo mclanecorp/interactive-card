@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Open+Sans&family=Overpass&family=Poppins:wght@200;300;400;500;600;700;800&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Lineargradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Lightgrayishviolet: hsl(270, 3%, 87%);
+  --Darkgrayishviolet: hsl(279, 6%, 55%);
+  --Verydarkviolet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Space Grotesk;
+  font-weight: 500;
+  font-size: 1.125rem;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  letter-spacing: 2px;
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+}
+/* card */
+
+.face-card {
+  width: 447px;
+  height: 245px;
+  background-image: url(./images/bg-card-front.png);
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.face-card img {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 15px;
+}
+
+.number-card {
+  color: var(--White);
+  letter-spacing: 4px;
+  font-size: 30px;
+  text-align: center;
+}
+.info-carte {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: var(--White);
+  padding: 0 20px;
+  font-weight: 200;
+}
+.name-card {
+  width: 100%;
+  margin-left: -15px;
+}
+
+.back-card {
+  width: 447px;
+  height: 245px;
+  background-image: url(./images/bg-card-back.png);
+  background-repeat: no-repeat;
+  margin-left: 100px;
+}
+
+.cvc-card {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 108px;
+  padding-left: 300px;
+}
+/* formulaire */
+
+.container-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 130px;
+}
+
+.container-form label {
+  font-size: 14px;
+  color: var(--Verydarkviolet);
+  margin-bottom: 5px;
+}
+
+.container-form input {
+  width: 65%;
+  border-radius: 5px;
+  padding: 10px 0;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  color: var(--Verydarkviolet);
+  border: 1px solid var(--Verydarkviolet);
+}
+.alert-name {
+  color: red;
+  margin-top: -20px;
+  display: none;
+}
+.alert-card {
+  color: red;
+  margin-top: -20px;
+  display: none;
+}
+.alert-date {
+  color: red;
+  margin-top: -20px;
+  display: none;
+  margin-left: 130px;
+}
+.container-date {
+  display: flex;
+  flex-direction: column;
+}
+.container-date-cvc {
+  display: flex;
+  width: 65%;
+}
+.container-date .form-date {
+  display: flex;
+}
+.container-date .form-date input {
+  width: 35%;
+  margin-right: 15px;
+  padding-top: 10px;
+}
+.container-cvc {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.container-cvc input {
+  padding-top: 10px;
+  width: 100%;
+}
+input::placeholder {
+  color: var(--Lightgrayishviolet);
+}
+
+/*button*/
+
+.button {
+  width: 65%;
+  margin-top: 20px;
+  border: none;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: var(--White);
+  background-color: var(--Verydarkviolet);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/*thank you*/
+
+.container-thank {
+  display: none;
+  padding-top: 100px;
+  padding-right: 200px;
+}
+
+.thank-you {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+.thank-you img {
+  margin-bottom: 30px;
+}
+.thank-you p {
+  margin-bottom: 20px;
+  color: var(--Darkgrayishviolet);
+}
+.thank-you h1 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.button-thankYou {
+  width: 70%;
+  margin-top: 20px;
+  border: none;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: var(--White);
+  background-color: var(--Verydarkviolet);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
